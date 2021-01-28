@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>LandingPage Gimansio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="#" onclick="toggleMenu();">Inicio</a></li>
+      <li><a href="#" onclick="toggleMenu();">Acerca</a></li>
+      <li><a href="#" onclick="toggleMenu();">Entrenamiento</a></li>
+      <li><a href="#" onclick="toggleMenu();">Team</a></li>
+      <li><a href="#" onclick="toggleMenu();">Contacto</a></li>
+    </ul>
+  </div>
+  <section class="banner">
+    <header>
+      <h2 class="logo">Gimanasio</h2>
+      <div class="toggle" onclick="toggleMenu();"></div>
+    </header>
+    <video src="bg.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Se Fuerte</h2>
+      <h3>Nunca te rindas</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+      <a href="#">Unete</a>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook.png"></a></li>
+      <li><a href="#"><img src="twitter.png"></a></li>
+      <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      var banner = document.querySelector('.banner');
+      menuToggle.classList.toggle('active');
+      banner.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

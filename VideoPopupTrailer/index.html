@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Video Popup | Presentacion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="content">
+      <img src="bg.jpg">
+      <h2>Video Popup | Presentacion</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+      <a href="#" class="play" onclick="toggle();">Ver Trailer</a>
+      <div class="slide"></div>
+    </div>
+  </div>
+  <div class="trailer">
+    <video src="trailer.mp4" controls="true"></video>
+    <img src="close.png" onclick="toggle();" class="close">
+  </div>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer = document.querySelector(".trailer");
+      var video = document.querySelector("video");
+      trailer.classList.toggle("active");
+      video.currentTime = 0;
+      video.pause(); 
+    }
+  </script>
+</body>
+</html>
